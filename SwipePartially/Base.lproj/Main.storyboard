@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SwipePartially" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where do you want to go?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Lx-la-Sb6">
+                                <rect key="frame" x="75" y="40" width="225.5" height="24"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MaY-bf-5MF">
+                                <rect key="frame" x="107.5" y="599" width="160" height="44"/>
+                                <color key="backgroundColor" red="0.21277303710000001" green="0.63875418169999998" blue="0.89536405460000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="160" id="N0E-sZ-BV8"/>
+                                    <constraint firstAttribute="height" constant="44" id="tfW-Q1-oJU"/>
+                                </constraints>
+                                <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TN-Im-UnL">
+                                <rect key="frame" x="0.0" y="104" width="375" height="455"/>
+                                <connections>
+                                    <segue destination="zGP-ki-MMN" kind="embed" id="qhQ-M1-SaA"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="6Lx-la-Sb6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="0AB-t5-saZ"/>
+                            <constraint firstItem="7TN-Im-UnL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AvT-uC-sYJ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MaY-bf-5MF" secondAttribute="bottom" constant="24" id="GYb-ab-nEJ"/>
+                            <constraint firstItem="MaY-bf-5MF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KlL-df-Jtg"/>
+                            <constraint firstItem="7TN-Im-UnL" firstAttribute="top" secondItem="6Lx-la-Sb6" secondAttribute="bottom" constant="40" id="Mif-wN-a0j"/>
+                            <constraint firstItem="6Lx-la-Sb6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xgj-wb-LJG"/>
+                            <constraint firstItem="MaY-bf-5MF" firstAttribute="top" secondItem="7TN-Im-UnL" secondAttribute="bottom" constant="40" id="vOT-j4-ReX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7TN-Im-UnL" secondAttribute="trailing" id="zDw-HU-nFD"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="140" y="132.68365817091455"/>
+        </scene>
+        <!--Page View Controller-->
+        <scene sceneID="qLF-Kb-0FF">
+            <objects>
+                <pageViewController autoresizesArchivedViewToFullSize="NO" transitionStyle="pageCurl" navigationOrientation="horizontal" spineLocation="min" id="zGP-ki-MMN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o8D-TE-Sm1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="951" y="133"/>
+        </scene>
+    </scenes>
+</document>
