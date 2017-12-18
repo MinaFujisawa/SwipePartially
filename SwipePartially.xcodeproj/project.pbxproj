@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		093ED51E1FE4BDC50013F6CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093ED51D1FE4BDC50013F6CB /* AppDelegate.swift */; };
-		093ED5201FE4BDC50013F6CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093ED51F1FE4BDC50013F6CB /* ViewController.swift */; };
+		093ED5201FE4BDC50013F6CB /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 093ED51F1FE4BDC50013F6CB /* MainViewController.swift */; };
 		093ED5231FE4BDC50013F6CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093ED5211FE4BDC50013F6CB /* Main.storyboard */; };
 		093ED5251FE4BDC50013F6CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 093ED5241FE4BDC50013F6CB /* Assets.xcassets */; };
 		093ED5281FE4BDC50013F6CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 093ED5261FE4BDC50013F6CB /* LaunchScreen.storyboard */; };
@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		093ED51A1FE4BDC50013F6CB /* SwipePartially.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipePartially.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		093ED51D1FE4BDC50013F6CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		093ED51F1FE4BDC50013F6CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		093ED51F1FE4BDC50013F6CB /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		093ED5221FE4BDC50013F6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		093ED5241FE4BDC50013F6CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		093ED5271FE4BDC50013F6CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -104,14 +104,14 @@
 			isa = PBXGroup;
 			children = (
 				093ED51D1FE4BDC50013F6CB /* AppDelegate.swift */,
-				093ED51F1FE4BDC50013F6CB /* ViewController.swift */,
+				093ED51F1FE4BDC50013F6CB /* MainViewController.swift */,
+				093ED5511FE8421A0013F6CB /* OptionViewController.swift */,
 				093ED5211FE4BDC50013F6CB /* Main.storyboard */,
 				093ED5241FE4BDC50013F6CB /* Assets.xcassets */,
 				093ED5261FE4BDC50013F6CB /* LaunchScreen.storyboard */,
 				093ED5291FE4BDC50013F6CB /* Info.plist */,
 				093ED54D1FE5A1810013F6CB /* OptionPageViewController.swift */,
 				093ED54F1FE5A8320013F6CB /* Option.swift */,
-				093ED5511FE8421A0013F6CB /* OptionViewController.swift */,
 			);
 			path = SwipePartially;
 			sourceTree = "<group>";
@@ -270,7 +270,7 @@
 			files = (
 				093ED5501FE5A8320013F6CB /* Option.swift in Sources */,
 				093ED5521FE8421A0013F6CB /* OptionViewController.swift in Sources */,
-				093ED5201FE4BDC50013F6CB /* ViewController.swift in Sources */,
+				093ED5201FE4BDC50013F6CB /* MainViewController.swift in Sources */,
 				093ED51E1FE4BDC50013F6CB /* AppDelegate.swift in Sources */,
 				093ED54E1FE5A1810013F6CB /* OptionPageViewController.swift in Sources */,
 			);
