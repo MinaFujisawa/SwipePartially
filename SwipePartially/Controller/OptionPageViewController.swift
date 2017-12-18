@@ -12,11 +12,9 @@ class OptionPageViewController: UIPageViewController {
     var options: [Option] = OptionSet.options()
     var optionViews = [UIViewController]()
 
-    // MARK: - View Lifecycle
-    public override func viewDidLoad() {
+    override func viewDidLoad() {
         super.viewDidLoad()
         self.dataSource = self
-//        self.delegate = self
         setupViewControllers()
     }
     

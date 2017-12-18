@@ -16,9 +16,9 @@ class MainViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        button.backgroundColor = UIColor.gray
+        setOkButton(selected: false)
 
-        // Notification to get selected(Bool)
+        // set Notification to get selected(Bool)
         observer = nc.addObserver(forName: NSNotification.Name.selectOption,
                                   object: nil,
                                   queue: nil,

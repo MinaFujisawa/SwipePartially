@@ -24,11 +24,12 @@ class OptionViewController: UIViewController {
 
         checkButton.addTarget(self, action: #selector(tappedSelectButton), for: .touchUpInside)
     }
-    
-    override func viewWillAppear(_ animated: Bool) {
+
+    override func viewDidAppear(_ animated: Bool) {
         nc.post(name: .selectOption, object: selected)
     }
     
+
     private func setupContents() {
         titleLabel.text = option.title
         bodyTextView.text = option.body
@@ -36,7 +37,7 @@ class OptionViewController: UIViewController {
         requmentLabel.text = "Can you bring \(option.requrement)?"
         setSelectButton()
     }
-    
+
     private func setSelectButton() {
         if selected {
             checkButton.backgroundColor = UIColor.blue
