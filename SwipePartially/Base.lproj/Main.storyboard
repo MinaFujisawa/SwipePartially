@@ -20,7 +20,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Where do you want to go?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Lx-la-Sb6">
-                                <rect key="frame" x="75" y="40" width="225.5" height="24"/>
+                                <rect key="frame" x="75" y="44" width="225.5" height="24"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -36,7 +36,7 @@
                                 <state key="normal" title="OK"/>
                             </button>
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7TN-Im-UnL">
-                                <rect key="frame" x="0.0" y="104" width="375" height="455"/>
+                                <rect key="frame" x="0.0" y="92" width="375" height="467"/>
                                 <connections>
                                     <segue destination="zGP-ki-MMN" kind="embed" id="qhQ-M1-SaA"/>
                                 </connections>
@@ -44,11 +44,11 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="6Lx-la-Sb6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="0AB-t5-saZ"/>
+                            <constraint firstItem="6Lx-la-Sb6" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="24" id="0AB-t5-saZ"/>
                             <constraint firstItem="7TN-Im-UnL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="AvT-uC-sYJ"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MaY-bf-5MF" secondAttribute="bottom" constant="24" id="GYb-ab-nEJ"/>
                             <constraint firstItem="MaY-bf-5MF" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="KlL-df-Jtg"/>
-                            <constraint firstItem="7TN-Im-UnL" firstAttribute="top" secondItem="6Lx-la-Sb6" secondAttribute="bottom" constant="40" id="Mif-wN-a0j"/>
+                            <constraint firstItem="7TN-Im-UnL" firstAttribute="top" secondItem="6Lx-la-Sb6" secondAttribute="bottom" constant="24" id="Mif-wN-a0j"/>
                             <constraint firstItem="6Lx-la-Sb6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xgj-wb-LJG"/>
                             <constraint firstItem="MaY-bf-5MF" firstAttribute="top" secondItem="7TN-Im-UnL" secondAttribute="bottom" constant="40" id="vOT-j4-ReX"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7TN-Im-UnL" secondAttribute="trailing" id="zDw-HU-nFD"/>
@@ -81,7 +81,7 @@
             <objects>
                 <viewController storyboardIdentifier="OptionViewController" id="xyi-u4-ZLH" customClass="OptionViewController" customModule="SwipePartially" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="oNx-T7-4Pp">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="455"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="467"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="to5-CG-Gpo">
@@ -96,8 +96,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="srT-Ye-lIy">
-                                <rect key="frame" x="16" y="267" width="343" height="144"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="srT-Ye-lIy">
+                                <rect key="frame" x="16" y="267" width="343" height="156"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <constraints>
                                     <constraint firstAttribute="height" relation="lessThanOrEqual" constant="200" id="fJE-1i-bXh"/>
@@ -107,7 +107,7 @@
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ktn-bQ-eeY">
-                                <rect key="frame" x="150" y="431" width="74" height="24"/>
+                                <rect key="frame" x="150" y="443" width="74" height="24"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RXT-fG-d3J">
                                         <rect key="frame" x="0.0" y="0.0" width="24" height="24"/>

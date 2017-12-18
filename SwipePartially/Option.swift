@@ -20,9 +20,12 @@ struct Option {
 
 struct OptionSet {
     static func options() -> [Option] {
-        let option1 = Option(title: "Hiking", body: "let's go to hiking", imageName: "hiking", requrement: "Water", selected: false)
-        let option2 = Option(title: "Beach", body: "let's go to hiking", imageName: "beach", requrement: "Hat", selected: false)
-        let option3 = Option(title: "Pool", body: "let's go to hiking", imageName: "pool", requrement: "Swiming wear", selected: false)
+        let option1 = Option(title: "Stanley Park", body: "Yoga classes are coming back to Stanley Park for eight sessions! Starting on Monday evenings, May 8th through June 26th 6:00 pm to 7:00 pm on the Acre Lawn, next to the Pavilion Annex.", imageName: "park", requrement: "yoga mat", selected: false)
+        
+        let option2 = Option(title: "VanDusen Botanical Garden", body: "VanDusen Botanical Garden is a 55-acre oasis in the heart of Vancouver with over 7,500 plant species and varieties from around the world! Spot and photograph local wildlife, find your way through an Elizabethan hedge maze, unwind in a serene setting, dine on the patios of Truffles Cafe or Shaughnessy Restaurant, or browse the garden-themed gift shop.", imageName: "garden", requrement: "camera", selected: false)
+        
+        let option3 = Option(title: "Grouse mountain", body: "Just 15 minutes from downtown Vancouver, Grouse Mountain attracts locals and tourists alike", imageName: "grouse", requrement: "beverage", selected: false)
+        
         return [option1, option2, option3]
     }
 }

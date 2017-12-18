@@ -17,10 +17,33 @@ class OptionViewController: UIViewController {
     @IBOutlet weak var imageView: UIImageView!
     
     var option : Option!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        titleLabel.text = option.title
+        bodyTextView.text = option.body
+        imageView.image = UIImage(named: option.imageName)
+        requmentLabel.text = "Can you bring \(option.requrement)?"
         
+        checkButton.addTarget(self, action: #selector(tappedSelectButton), for: .touchUpInside)
+        setSelectButton()
+    }
+    
+    private func setSelectButton() {
+        if option.selected {
+            checkButton.backgroundColor = UIColor.blue
+        } else {
+            checkButton.backgroundColor = UIColor.lightGray
+        }
+    }
+    
+    @objc private func tappedSelectButton() {
+        if option.selected {
+            option.selected = false
+        } else {
+            option.selected = true
+        }
+        setSelectButton()
     }
 
 }
