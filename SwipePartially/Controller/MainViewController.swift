@@ -10,21 +10,21 @@ import UIKit
 
 class MainViewController: UIViewController {
     @IBOutlet weak var button: UIButton!
-    @IBOutlet weak var containerView: UIView!
+
     let nc = NotificationCenter.default
     var observer: AnyObject?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         button.backgroundColor = UIColor.gray
-        
+
         // Notification to get selected(Bool)
         observer = nc.addObserver(forName: NSNotification.Name.selectOption,
                                   object: nil,
                                   queue: nil,
                                   using:
                                       { (notification) -> Void in
-                                        self.setOkButton(selected: notification.object as! Bool)
+                                          self.setOkButton(selected: notification.object as! Bool)
                                   })
     }
 

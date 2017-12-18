@@ -104,14 +104,11 @@
 			isa = PBXGroup;
 			children = (
 				093ED51D1FE4BDC50013F6CB /* AppDelegate.swift */,
-				093ED51F1FE4BDC50013F6CB /* MainViewController.swift */,
-				093ED5511FE8421A0013F6CB /* OptionViewController.swift */,
-				093ED5211FE4BDC50013F6CB /* Main.storyboard */,
 				093ED5241FE4BDC50013F6CB /* Assets.xcassets */,
-				093ED5261FE4BDC50013F6CB /* LaunchScreen.storyboard */,
 				093ED5291FE4BDC50013F6CB /* Info.plist */,
-				093ED54D1FE5A1810013F6CB /* OptionPageViewController.swift */,
-				093ED54F1FE5A8320013F6CB /* Option.swift */,
+				09F6F7F31FE874CF004B5B9C /* Model */,
+				09F6F7F21FE874C2004B5B9C /* View */,
+				09F6F7F11FE874B1004B5B9C /* Controller */,
 			);
 			path = SwipePartially;
 			sourceTree = "<group>";
@@ -132,6 +129,33 @@
 				093ED53F1FE4BDC50013F6CB /* Info.plist */,
 			);
 			path = SwipePartiallyUITests;
+			sourceTree = "<group>";
+		};
+		09F6F7F11FE874B1004B5B9C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				093ED51F1FE4BDC50013F6CB /* MainViewController.swift */,
+				093ED54D1FE5A1810013F6CB /* OptionPageViewController.swift */,
+				093ED5511FE8421A0013F6CB /* OptionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		09F6F7F21FE874C2004B5B9C /* View */ = {
+			isa = PBXGroup;
+			children = (
+				093ED5211FE4BDC50013F6CB /* Main.storyboard */,
+				093ED5261FE4BDC50013F6CB /* LaunchScreen.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		09F6F7F31FE874CF004B5B9C /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				093ED54F1FE5A8320013F6CB /* Option.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
